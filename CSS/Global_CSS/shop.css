@@ -1,0 +1,494 @@
+/* ======================= Shop Page Styles ======================= */
+
+/* Breadcrumb Section */
+#breadcrumb {
+  padding: 30px 0;
+  background-color: var(--WhiteColor);
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item {
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--DarkSilver);
+}
+
+.breadcrumb-item a {
+  color: var(--DarkSilver);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--BlackColor);
+}
+
+.breadcrumb-item.active {
+  color: var(--BlackColor);
+  font-weight: 500;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: var(--DarkSilver);
+  padding: 0 10px;
+}
+
+/* Shop Section */
+#shopSection {
+  padding: 50px 0 80px;
+  background-color: var(--WhiteColor);
+}
+
+.shopPageTitle {
+  color: var(--BlackColor);
+  margin-bottom: 30px;
+}
+
+/* Sidebar Filters */
+.shopSidebar {
+  padding-right: 30px;
+}
+
+.filterSection {
+  border-bottom: 1px solid var(--Anti-FlashWhite);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.filterHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.filterHeader span {
+  color: var(--BlackColor);
+  font-weight: 600;
+}
+
+.filterHeader i {
+  font-size: 14px;
+  color: var(--BlackColor);
+  transition: transform 0.3s ease;
+}
+
+.filterHeader[aria-expanded="true"] i {
+  transform: rotate(45deg);
+}
+
+.filterList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filterList li {
+  margin-bottom: 12px;
+}
+
+.filterItem {
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--DarkSilver);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.filterItem:hover {
+  color: var(--BlackColor);
+  padding-left: 5px;
+}
+
+/* Color Filter */
+.colorList {
+  padding: 0;
+}
+
+.colorFilterItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  color: var(--DarkSilver);
+  margin-bottom: 12px;
+}
+
+.colorCheckbox {
+  display: none;
+}
+
+.colorDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.colorFilterItem:hover .colorDot {
+  border-color: var(--BlackColor);
+}
+
+.colorCheckbox:checked + .colorDot {
+  border: 2px solid var(--BlackColor);
+  position: relative;
+}
+
+.colorCheckbox:checked + .colorDot::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--WhiteColor);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.colorName {
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  color: var(--DarkSilver);
+}
+
+/* Shop Controls */
+.shopControls {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--Anti-FlashWhite);
+  margin-bottom: 30px;
+}
+
+.controlLabel {
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--BlackColor);
+  margin: 0;
+}
+
+.sortSelect,
+.viewSelect {
+  width: auto;
+  min-width: 150px;
+  border: 1px solid var(--MetalColor);
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  color: var(--BlackColor);
+  padding: 8px 15px;
+}
+
+.sortSelect:focus,
+.viewSelect:focus {
+  border-color: var(--BlackColor);
+  box-shadow: none;
+}
+
+.viewSelect {
+  min-width: 80px;
+}
+
+/* Products Grid */
+.productsGrid {
+  margin-bottom: 40px;
+}
+
+.productCard {
+  background-color: var(--WhiteColor);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.productLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.productImage {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--WhiteSmoke);
+}
+
+.productImage img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.productCard:hover .productImage img {
+  transform: scale(1.05);
+}
+
+.productBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 15px;
+  font-family: var(--DM-Sans);
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.badgeNew {
+  background-color: var(--BlackColor);
+  color: var(--WhiteColor);
+}
+
+.badgeSale {
+  background-color: var(--BlackColor);
+  color: var(--WhiteColor);
+}
+
+/* Product Overlay */
+.productOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productCard:hover .productOverlay {
+  transform: translateY(0);
+}
+
+.overlayBtn {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--BlackColor);
+  background-color: var(--WhiteColor);
+  color: var(--BlackColor);
+  font-family: var(--DM-Sans);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.overlayBtn:hover {
+  background-color: var(--BlackColor);
+  color: var(--WhiteColor);
+}
+
+.overlayBtn i {
+  font-size: 14px;
+}
+
+/* Product Body */
+.productBody {
+  padding: 20px 0;
+}
+
+.productTitle {
+  color: var(--BlackColor);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.productCategory {
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  color: var(--DarkSilver);
+  margin-bottom: 5px;
+}
+
+.productPrice {
+  font-family: var(--DM-Sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--BlackColor);
+  margin: 0;
+}
+
+/* Pagination */
+.pagination {
+  gap: 5px;
+}
+
+.page-item .page-link {
+  border: 1px solid var(--Anti-FlashWhite);
+  color: var(--DarkSilver);
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
+.page-item.active .page-link {
+  background-color: var(--BlackColor);
+  border-color: var(--BlackColor);
+  color: var(--WhiteColor);
+}
+
+.page-item .page-link:hover {
+  background-color: var(--BlackColor);
+  border-color: var(--BlackColor);
+  color: var(--WhiteColor);
+}
+
+.productsCount {
+  color: var(--DarkSilver);
+}
+
+/* ======================= Responsive Styles ======================= */
+
+/* Tablet View */
+@media (max-width: 991px) {
+  .shopSidebar {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .filterSection {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .shopControls {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start !important;
+  }
+
+  .sortControl,
+  .viewControl {
+    width: 100%;
+  }
+
+  .sortSelect,
+  .viewSelect {
+    width: 100%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  #breadcrumb {
+    padding: 20px 0;
+  }
+
+  #shopSection {
+    padding: 30px 0 50px;
+  }
+
+  .shopPageTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .filterHeader span {
+    font-size: 14px;
+  }
+
+  .productCard {
+    margin-bottom: 20px;
+  }
+
+  .productBadge {
+    top: 10px;
+    left: 10px;
+    padding: 4px 12px;
+    font-size: 11px;
+  }
+
+  .productOverlay {
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .overlayBtn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+
+  .page-item .page-link {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile View */
+@media (max-width: 575px) {
+  .breadcrumb-item {
+    font-size: 12px;
+  }
+
+  .shopPageTitle {
+    font-size: 24px;
+  }
+
+  .filterHeader span {
+    font-size: 13px;
+  }
+
+  .filterItem,
+  .colorName {
+    font-size: 13px;
+  }
+
+  .controlLabel {
+    font-size: 13px;
+  }
+
+  .sortSelect,
+  .viewSelect {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .productTitle {
+    font-size: 14px;
+  }
+
+  .productCategory {
+    font-size: 13px;
+  }
+
+  .productPrice {
+    font-size: 15px;
+  }
+
+  .overlayBtn {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  .overlayBtn i {
+    font-size: 12px;
+  }
+}
