@@ -1,0 +1,191 @@
+/* ======================= google font ===================== */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* font-family: "DM Sans", sans-serif; */
+
+/* ======================= google font ===================== */
+
+/* ======================= common css ====================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a,
+span {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+div,
+section,
+article,
+address,
+li,
+ul,
+ol,
+img,
+picture,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================= common css ====================== */
+
+/* ======================= css variables ====================== */
+
+:root {
+  --WhiteColor: #ffff;
+  --Anti-FlashWhite: #f3f3f3;
+  --WhiteSmoke: #f5f5f3;
+  --BlackColor: #262626;
+  --DarkSilver: #6d6d6d;
+  --SonicSilver: #767676;
+  --MetalColor: #b6b6b6;
+  --TulipColor: #ff8686;
+  --StrongGreen: #7ed321;
+  --tealGreen: #15cba5;
+  --DM-Sans: "DM Sans", sans-serif;
+}
+
+.heading1 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 49px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading2 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 39px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading3 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading4 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+.heading5 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading6 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+.paragraph {
+  font-family: var(--DM-Sans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+/* ======================= css variables ====================== */
+/* ======================= Signup css ====================== */
+#signup {
+  padding: 124px 0;
+}
+.signup__path {
+  margin-top: 11px;
+}
+.page__Description {
+  margin-top: 107px;
+  color: var(--SonicSilver);
+  padding-bottom: 62px;
+}
+.signupForm {
+  padding: 42px 0px;
+  /* border-bottom: 1px solid #d8d8d8; */
+}
+.signupinfo {
+  padding: 25px 0px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.signupWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.signup__input {
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 17px 2px;
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  color: var(--SonicSilver);
+}
+.privacypolicy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.privacy__label {
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+}
+.subscribe__option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.privacy__label {
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+}
+.login__btn {
+  padding: 16px 70px;
+  background-color: var(--BlackColor);
+  color: var(--Anti-FlashWhite);
+  border: 0;
+  outline: none;
+}
+/* ======================= Signup css ====================== */
