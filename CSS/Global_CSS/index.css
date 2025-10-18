@@ -122,3 +122,72 @@ a {
 }
 
 /* ======================= css variables ====================== */
+/* ======================= navbar style ======================= */
+
+.customNav {
+  padding: 25px 0;
+}
+
+.customNavMenu {
+  margin: 0 auto;
+  column-gap: 40px;
+}
+
+.customNavMenu__list__item {
+  color: var(--SonicSilver);
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+  font-weight: 500;
+  transition: all linear 0.3s;
+}
+
+.customNavMenu__list__item:hover {
+  color: var(--BlackColor);
+}
+
+/* ======================= navbar style ======================= */
+
+/* ======================= search part style ======================= */
+
+#searchPart {
+  background-color: var(--WhiteSmoke);
+  padding: 25px 0;
+}
+
+.searchProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchLeftPart i {
+  font-size: 18px;
+}
+
+.searchLeftPart__text {
+  color: var(--BlackColor);
+  font-size: 16px;
+  font-family: var(--DM-Sans);
+  font-weight: 500;
+}
+
+.searchMiddlePart__input {
+  width: 100%;
+  padding: 16px 21px;
+  border: none;
+  background-color: var(--WhiteColor);
+  color: var(--BlackColor);
+}
+
+.searchMiddlePart__icon {
+  position: absolute;
+  top: 37%;
+  left: 93%;
+  cursor: pointer;
+}
+
+.searchRightPart i {
+  font-size: 20px;
+  cursor: pointer;
+}
+/* ======================= search part style ======================= */

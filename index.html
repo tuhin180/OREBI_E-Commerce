@@ -442,7 +442,104 @@
     <link rel="stylesheet" href="CSS/Global_CSS/index.css" />
     <!-- ----------- css link ------------- -->
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-expand-lg customNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <picture>
+            <img
+              src="imageFile/homeImages/Logo.png"
+              alt="imageFile/homeImages/Logo.png"
+            />
+          </picture>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav customNavMenu">
+            <li class="nav-item customNavMenu__list">
+              <a class="nav-link customNavMenu__list__item" href="home.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="shop.html"
+                >Shop</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="contact.html"
+                >Contacts</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="#">Journal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======================= navbar part ==================== -->
+
+    <!-- ======================= search part ==================== -->
+
+    <section id="searchPart">
+      <div class="container">
+        <div class="row searchProduct">
+          <div class="col-lg-2">
+            <div class="searchLeftPart d-flex align-items-center gap-1">
+              <i class="fa-solid fa-grip-lines" style="color: #000000"></i>
+              <p class="searchLeftPart__text">Shop by Category</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 offset-1">
+            <div class="searchMiddlePart position-relative">
+              <input
+                type="text"
+                placeholder="Search Products"
+                class="searchMiddlePart__input"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass searchMiddlePart__icon"
+                style="color: #000000"
+              ></i>
+            </div>
+          </div>
+
+          <div class="col-lg-1 offset-1">
+            <div class="searchRightPart d-flex gap-4">
+              <i class="fa-solid fa-user" style="color: #000000"></i>
+              <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= search part ==================== -->
+  </body>
 
   <!-- ------------- bootstarp link ----------  -->
   <script
