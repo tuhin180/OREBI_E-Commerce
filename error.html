@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OREBI</title>
+    <!-- ---------- bootstrap link -------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- ---------- bootstrap link -------- -->
+    <!-- ---------- font awesome cdn ------ -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-f308b1c468d733f774885022697dfc5c.css?vsn=d"
+    />
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/fontawesome.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/fontawesome.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/whiteboard-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/whiteboard-semibold.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-fill-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-fill-semibold.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-duo-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-duo-semibold.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-semibold.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thumbprint-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thumbprint-light.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-press-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-press-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-thin.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-solid.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-light.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-thin.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-duo-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-duo-solid.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-solid.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-fill-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-fill-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-duo-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-duo-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/etch-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/etch-solid.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-thin.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-light.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thin.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/solid.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/regular.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/light.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/brands.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/brands.css"
+      />
+    </noscript>
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/chisel-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/chisel-regular.css"
+      />
+    </noscript>
+    <!-- ---------- font awesome cdn ------ -->
+    <!-- ----------- css link ------------- -->
+    <link rel="stylesheet" href="CSS/Global_CSS/index.css" />
+    <!-- ----------- css link ------------- -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg customNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <picture>
+            <img
+              src="./Images/HomePage/Logo.png"
+              alt="imageFile/homeImages/Logo.png"
+              class="img-fluid w-100"
+            />
+          </picture>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav customNavMenu">
+            <li class="nav-item customNavMenu__list">
+              <a
+                class="nav-link customNavMenu__list__item custom--active"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="./shop.html"
+                >Shop</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="./about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link customNavMenu__list__item"
+                href="./contact.html"
+                >Contacts</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="#">Journal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ======================= navbar part ==================== -->
+    <!-- ======================= search part ==================== -->
+    <section id="searchPart">
+      <div class="container">
+        <div class="row searchProduct">
+          <div class="col-lg-2">
+            <div class="searchLeftPart d-flex align-items-center gap-1">
+              <i class="fa-solid fa-grip-lines" style="color: #000000"></i>
+              <p class="searchLeftPart__text">Shop by Category</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 offset-1">
+            <div class="searchMiddlePart position-relative">
+              <input
+                type="text"
+                placeholder="Search Products"
+                class="searchMiddlePart__input"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass searchMiddlePart__icon"
+                style="color: #000000"
+              ></i>
+            </div>
+          </div>
+
+          <div class="col-lg-1 offset-1">
+            <div class="searchRightPart d-flex gap-4">
+              <i class="fa-solid fa-user" style="color: #000000"></i>
+              <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= search part ==================== -->
+    <!-- ======================= Main part ==================== -->
+    <main></main>
+    <!-- ======================= Main part ==================== -->
+    <!-- ======================= footer part ==================== -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footerWrapper">
+          <div class="footerLeft">
+            <div class="">
+              <h3 class="footerMenu__tittle paragraph">Menue</h3>
+              <ul class="footerMenu">
+                <li>
+                  <a href="./index.html" class="footerMenu__list">Home</a>
+                </li>
+                <li>
+                  <a href="./shop.html" class="footerMenu__list">Shop</a>
+                </li>
+                <li>
+                  <a href="./about.html" class="footerMenu__list">About</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="footerMenu__list">Contact</a>
+                </li>
+                <li><a href="#" class="footerMenu__list">Journal</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="footerWrpper">
+                <h3 class="footerMenu__tittle paragraph">Shop</h3>
+                <ul class="footerMenu">
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li><a href="#" class="footerMenu__list">Category 1</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <div class="footerWrpper">
+                <h3 class="footerMenu__tittle paragraph">Help</h3>
+                <ul class="footerMenu">
+                  <li>
+                    <a href="#" class="footerMenu__list">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Special E-shop</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Shipping</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Secure Payments</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <div class="footerWrpper">
+                <h3 class="footerMenu__tittle paragraph">
+                  <strong>(052) 611-5711</strong>
+                </h3>
+                <p class="paragraph"><strong>company@domain.com</strong></p>
+                <p class="footer__address">
+                  575 Crescent Ave. Quakertown, PA 18951
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footerRight">
+            <picture
+              ><img
+                src="./Images/HomePage/Logo.png"
+                alt="./Images/HomePage/Logo.png "
+                class="img-fluid"
+            /></picture>
+            <p class="footerRight__copyright">
+              2020 Orebi Minimal eCommerce Figma Template by Adveits
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======================= footer part ==================== -->
+    <!-- ------------- bootstarp link ----------  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ------------- bootstarp link ----------  -->
+  </body>
+</html>

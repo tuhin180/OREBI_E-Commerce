@@ -477,6 +477,104 @@
     <!-- ----------- css link ------------- -->
   </head>
   <body>
+    <!-- ======================= navbar part ==================== -->
+    <nav class="navbar navbar-expand-lg customNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <picture>
+            <img
+              src="./Images/HomePage/Logo.png"
+              alt="imageFile/homeImages/Logo.png"
+              class="img-fluid w-100"
+            />
+          </picture>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav customNavMenu">
+            <li class="nav-item customNavMenu__list">
+              <a
+                class="nav-link customNavMenu__list__item custom--active"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="./shop.html"
+                >Shop</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="./about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link customNavMenu__list__item"
+                href="./contact.html"
+                >Contacts</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="#">Journal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ======================= navbar part ==================== -->
+    <!-- ======================= search part ==================== -->
+    <section id="searchPart">
+      <div class="container">
+        <div class="row searchProduct">
+          <div class="col-lg-2">
+            <div class="searchLeftPart d-flex align-items-center gap-1">
+              <i class="fa-solid fa-grip-lines" style="color: #000000"></i>
+              <p class="searchLeftPart__text">Shop by Category</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 offset-1">
+            <div class="searchMiddlePart position-relative">
+              <input
+                type="text"
+                placeholder="Search Products"
+                class="searchMiddlePart__input"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass searchMiddlePart__icon"
+                style="color: #000000"
+              ></i>
+            </div>
+          </div>
+
+          <div class="col-lg-1 offset-1">
+            <div class="searchRightPart d-flex gap-4">
+              <i class="fa-solid fa-user" style="color: #000000"></i>
+              <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= search part ==================== -->
     <main>
       <!--============signup page=================-->
       <section id="login">
@@ -544,6 +642,98 @@
       </section>
       <!--============signup page=================-->
     </main>
+    <!-- ======================= footer part ==================== -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footerWrapper">
+          <div class="footerLeft">
+            <div class="">
+              <h3 class="footerMenu__tittle paragraph">Menue</h3>
+              <ul class="footerMenu">
+                <li>
+                  <a href="./index.html" class="footerMenu__list">Home</a>
+                </li>
+                <li>
+                  <a href="./shop.html" class="footerMenu__list">Shop</a>
+                </li>
+                <li>
+                  <a href="./about.html" class="footerMenu__list">About</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="footerMenu__list">Contact</a>
+                </li>
+                <li><a href="#" class="footerMenu__list">Journal</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="footerWrpper">
+                <h3 class="footerMenu__tittle paragraph">Shop</h3>
+                <ul class="footerMenu">
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Category 1</a>
+                  </li>
+                  <li><a href="#" class="footerMenu__list">Category 1</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <div class="footerWrpper">
+                <h3 class="footerMenu__tittle paragraph">Help</h3>
+                <ul class="footerMenu">
+                  <li>
+                    <a href="#" class="footerMenu__list">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Special E-shop</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Shipping</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footerMenu__list">Secure Payments</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <div class="footerWrpper">
+                <h3 class="footerMenu__tittle paragraph">
+                  <strong>(052) 611-5711</strong>
+                </h3>
+                <p class="paragraph"><strong>company@domain.com</strong></p>
+                <p class="footer__address">
+                  575 Crescent Ave. Quakertown, PA 18951
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footerRight">
+            <picture
+              ><img
+                src="./Images/HomePage/Logo.png"
+                alt="./Images/HomePage/Logo.png "
+                class="img-fluid"
+            /></picture>
+            <p class="footerRight__copyright">
+              2020 Orebi Minimal eCommerce Figma Template by Adveits
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======================= footer part ==================== -->
   </body>
 
   <!-- ------------- bootstarp link ----------  -->
