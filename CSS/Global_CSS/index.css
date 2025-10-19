@@ -223,6 +223,10 @@ a {
 }
 
 /* ================== hero style ================== */
+#hero {
+  background-color: #f5f7f9;
+}
+
 /* ================== discount style ================== */
 #discount {
   padding: 22px 0;
