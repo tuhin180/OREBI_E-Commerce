@@ -120,6 +120,34 @@ a {
   line-height: 30px;
   letter-spacing: 0px;
 }
+.label {
+  font-family: var(--DM-Sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+.primaryBtn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: auto;
+  background-color: var(--BlackColor);
+  color: var(--Anti-FlashWhite);
+  border: 0;
+  padding: 16px 60px;
+  transition: all linear 0.3s;
+
+  &:hover {
+    background-color: var(--WhiteSmoke);
+    color: var(--BlackColor);
+  }
+}
+.secondaryBtn {
+  background-color: var(--BlackColor);
+  color: var(--Anti-FlashWhite);
+  padding: 8px 25px;
+  border: 0;
+}
 
 /* ======================= css variables ====================== */
 /* ======================= navbar style ======================= */
@@ -193,8 +221,74 @@ a {
   font-size: 20px;
   cursor: pointer;
 }
-/* ======================= search part style ======================= */
-/* ======================= footer part ======================= */
+
+/* ================== hero style ================== */
+/* ================== discount style ================== */
+#discount {
+  padding: 22px 0;
+}
+.warranty {
+  color: var(--MetalColor);
+}
+.discountLeft {
+  position: relative;
+}
+.discountContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  bottom: 10%;
+  left: 10%;
+}
+.discountDetails {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.discount__percentage {
+  font-size: 40px;
+  font-weight: 700;
+}
+.discountRightWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
+}
+.discountRight,
+.discountRight2 {
+  flex: 1;
+  position: relative;
+}
+/*========== speacial offer =========*/
+#Offers {
+  padding: 100px 0px;
+}
+.offerCard {
+  position: relative;
+}
+.offercardDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offercard__product__price {
+  color: var(--SonicSilver);
+}
+.offercard__product__color {
+  margin-top: 15px;
+  color: var(--SonicSilver);
+}
+.btn--new {
+  position: absolute;
+  top: 6%;
+  left: 8%;
+}
+
+/* ================ footer part =================== */
 #footer {
   background-color: var(--WhiteSmoke);
   padding: 55px 0px;
