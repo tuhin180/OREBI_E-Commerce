@@ -138,7 +138,7 @@ a {
   transition: all linear 0.3s;
 
   &:hover {
-    background-color: var(--WhiteSmoke);
+    background-color: var(--Anti-FlashWhite);
     color: var(--BlackColor);
   }
 }
@@ -261,6 +261,23 @@ a {
 .discountRight2 {
   flex: 1;
   position: relative;
+}
+/*========== phone of year banner =========*/
+#banner {
+  margin-top: 100px;
+}
+.Phnoftheyearbanner {
+  background-color: var(--WhiteSmoke);
+}
+.bannerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.banner__btn {
+  align-self: flex-start;
 }
 /*========== speacial offer =========*/
 #Offers {
