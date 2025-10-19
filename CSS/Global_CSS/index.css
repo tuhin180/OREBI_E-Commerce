@@ -262,6 +262,81 @@ a {
   flex: 1;
   position: relative;
 }
+/*========== New arrival =========*/
+#Newarrival {
+  padding: 60px 0px;
+}
+.newArrivalCard {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.NewArrivalbtn {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 9px 20px;
+  background-color: var(--BlackColor);
+  color: var(--Anti-FlashWhite);
+  border: 0;
+}
+.newArrivalCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  overflow: hidden;
+}
+.newArrivalCard:hover .newArrivalCard--overlay {
+  opacity: 1;
+  bottom: 23%;
+  right: 0;
+}
+.newArrivalCard--overlay {
+  position: absolute;
+  background-color: var(--WhiteSmoke);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding: 25px;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+.newArrivalCard__btn {
+  background-color: transparent;
+  border: 0;
+  color: var(--SonicSilver);
+}
+.newArrivalCard__icon {
+  color: var(--BlackColor);
+}
+.carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+.customCarosel--icon {
+  background-color: var(--MetalColor);
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+.newArrivalN-Cards {
+  margin-top: 100px;
+}
 /*========== phone of year banner =========*/
 #banner {
   margin-top: 100px;
