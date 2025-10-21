@@ -446,7 +446,7 @@
   <body>
     <nav class="navbar navbar-expand-lg customNav">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <picture>
             <img
               src="./Images/HomePage/Logo.png"
@@ -471,15 +471,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav customNavMenu">
             <li class="nav-item customNavMenu__list">
-              <a
-                class="nav-link customNavMenu__list__item custom--active"
-                href="./index.html"
+              <a class="nav-link customNavMenu__list__item" href="./index.html"
                 >Home</a
               >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link customNavMenu__list__item" href="./shop.html"
+              <a
+                class="nav-link customNavMenu__list__item custom--active"
+                href="./shop.html"
                 >Shop</a
               >
             </li>
@@ -532,9 +532,19 @@
           </div>
 
           <div class="col-lg-1 offset-1">
-            <div class="searchRightPart d-flex gap-4">
-              <i class="fa-solid fa-user" style="color: #000000"></i>
-              <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+            <div class="searchRightPart d-flex gap-2">
+              <a href="./signUp.html"
+                ><span
+                  ><i class="fa-solid fa-user" style="color: #000000"></i></span
+              ></a>
+
+              <a href="./checkout.html"
+                ><span
+                  ><i
+                    class="fa-solid fa-cart-shopping"
+                    style="color: #000000"
+                  ></i></span
+              ></a>
             </div>
           </div>
         </div>
@@ -550,8 +560,12 @@
             <div class="col-12">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Products</li>
+                  <li class="breadcrumb-item">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Products
+                  </li>
                 </ol>
               </nav>
             </div>
@@ -574,7 +588,12 @@
               <div class="shopSidebar">
                 <!-- Shop by Category -->
                 <div class="filterSection">
-                  <button class="filterHeader" data-bs-toggle="collapse" data-bs-target="#categoryFilter" aria-expanded="true">
+                  <button
+                    class="filterHeader"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#categoryFilter"
+                    aria-expanded="true"
+                  >
                     <span class="heading6">Shop by Category</span>
                     <i class="fa-solid fa-plus"></i>
                   </button>
@@ -591,7 +610,12 @@
 
                 <!-- Shop by Color -->
                 <div class="filterSection">
-                  <button class="filterHeader" data-bs-toggle="collapse" data-bs-target="#colorFilter" aria-expanded="false">
+                  <button
+                    class="filterHeader"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#colorFilter"
+                    aria-expanded="false"
+                  >
                     <span class="heading6">Shop by Color</span>
                     <i class="fa-solid fa-plus"></i>
                   </button>
@@ -599,36 +623,51 @@
                     <ul class="filterList colorList">
                       <li>
                         <label class="colorFilterItem">
-                          <input type="checkbox" class="colorCheckbox">
-                          <span class="colorDot" style="background-color: #000000;"></span>
+                          <input type="checkbox" class="colorCheckbox" />
+                          <span
+                            class="colorDot"
+                            style="background-color: #000000"
+                          ></span>
                           <span class="colorName">Color 1</span>
                         </label>
                       </li>
                       <li>
                         <label class="colorFilterItem">
-                          <input type="checkbox" class="colorCheckbox">
-                          <span class="colorDot" style="background-color: #ff8686;"></span>
+                          <input type="checkbox" class="colorCheckbox" />
+                          <span
+                            class="colorDot"
+                            style="background-color: #ff8686"
+                          ></span>
                           <span class="colorName">Color 2</span>
                         </label>
                       </li>
                       <li>
                         <label class="colorFilterItem">
-                          <input type="checkbox" class="colorCheckbox">
-                          <span class="colorDot" style="background-color: #7ed321;"></span>
+                          <input type="checkbox" class="colorCheckbox" />
+                          <span
+                            class="colorDot"
+                            style="background-color: #7ed321"
+                          ></span>
                           <span class="colorName">Color 3</span>
                         </label>
                       </li>
                       <li>
                         <label class="colorFilterItem">
-                          <input type="checkbox" class="colorCheckbox">
-                          <span class="colorDot" style="background-color: #b6b6b6;"></span>
+                          <input type="checkbox" class="colorCheckbox" />
+                          <span
+                            class="colorDot"
+                            style="background-color: #b6b6b6"
+                          ></span>
                           <span class="colorName">Color 4</span>
                         </label>
                       </li>
                       <li>
                         <label class="colorFilterItem">
-                          <input type="checkbox" class="colorCheckbox">
-                          <span class="colorDot" style="background-color: #15cba5;"></span>
+                          <input type="checkbox" class="colorCheckbox" />
+                          <span
+                            class="colorDot"
+                            style="background-color: #15cba5"
+                          ></span>
                           <span class="colorName">Color 5</span>
                         </label>
                       </li>
@@ -638,7 +677,12 @@
 
                 <!-- Shop by Brand -->
                 <div class="filterSection">
-                  <button class="filterHeader" data-bs-toggle="collapse" data-bs-target="#brandFilter" aria-expanded="false">
+                  <button
+                    class="filterHeader"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#brandFilter"
+                    aria-expanded="false"
+                  >
                     <span class="heading6">Shop by Brand</span>
                     <i class="fa-solid fa-plus"></i>
                   </button>
@@ -655,17 +699,30 @@
 
                 <!-- Shop by Price -->
                 <div class="filterSection">
-                  <button class="filterHeader" data-bs-toggle="collapse" data-bs-target="#priceFilter" aria-expanded="false">
+                  <button
+                    class="filterHeader"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#priceFilter"
+                    aria-expanded="false"
+                  >
                     <span class="heading6">Shop by Price</span>
                     <i class="fa-solid fa-plus"></i>
                   </button>
                   <div class="collapse" id="priceFilter">
                     <ul class="filterList">
                       <li><a href="#" class="filterItem">$0.00 - $9.99</a></li>
-                      <li><a href="#" class="filterItem">$10.00 - $19.99</a></li>
-                      <li><a href="#" class="filterItem">$20.00 - $29.99</a></li>
-                      <li><a href="#" class="filterItem">$30.00 - $39.99</a></li>
-                      <li><a href="#" class="filterItem">$40.00 - $69.99</a></li>
+                      <li>
+                        <a href="#" class="filterItem">$10.00 - $19.99</a>
+                      </li>
+                      <li>
+                        <a href="#" class="filterItem">$20.00 - $29.99</a>
+                      </li>
+                      <li>
+                        <a href="#" class="filterItem">$30.00 - $39.99</a>
+                      </li>
+                      <li>
+                        <a href="#" class="filterItem">$40.00 - $69.99</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -675,7 +732,9 @@
             <!-- Product Grid -->
             <div class="col-lg-9">
               <!-- Sort and View Controls -->
-              <div class="shopControls d-flex justify-content-between align-items-center mb-4">
+              <div
+                class="shopControls d-flex justify-content-between align-items-center mb-4"
+              >
                 <div class="sortControl d-flex align-items-center gap-3">
                   <label class="controlLabel">Sort by:</label>
                   <select class="form-select sortSelect">
@@ -705,7 +764,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product1.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product1.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <span class="badge productBadge badgeNew">NEW</span>
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
@@ -723,9 +786,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -740,7 +807,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product2.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product2.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <span class="badge productBadge badgeSale">-10%</span>
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
@@ -758,9 +829,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -775,7 +850,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product3.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product3.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
                               <i class="fa-regular fa-heart"></i>
@@ -792,9 +871,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -809,7 +892,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product4.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product4.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <span class="badge productBadge badgeNew">NEW</span>
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
@@ -827,9 +914,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -844,7 +935,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product5.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product5.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
                               <i class="fa-regular fa-heart"></i>
@@ -861,9 +956,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00(01)</p>
                             </div>
@@ -878,7 +977,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product6.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product6.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
                               <i class="fa-regular fa-heart"></i>
@@ -895,9 +998,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -912,7 +1019,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product7.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product7.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <span class="badge productBadge badgeSale">-10%</span>
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
@@ -930,9 +1041,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Phony/phone</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -947,7 +1062,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product8.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product8.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
                               <i class="fa-regular fa-heart"></i>
@@ -964,9 +1083,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -981,7 +1104,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product9.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product9.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <span class="badge productBadge badgeSale">-10%</span>
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
@@ -999,9 +1126,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -1016,7 +1147,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product10.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product10.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
                               <i class="fa-regular fa-heart"></i>
@@ -1033,9 +1168,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -1050,7 +1189,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product1.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product1.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
                               <i class="fa-regular fa-heart"></i>
@@ -1067,9 +1210,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Beach</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -1084,7 +1231,11 @@
                     <div class="productCard">
                       <a href="./product.html" class="productLink">
                         <div class="productImage position-relative">
-                          <img src="./Images/ShopPage/product2.png" alt="Product" class="img-fluid w-100">
+                          <img
+                            src="./Images/ShopPage/product2.png"
+                            alt="Product"
+                            class="img-fluid w-100"
+                          />
                           <div class="productOverlay">
                             <button class="overlayBtn" type="button">
                               <i class="fa-regular fa-heart"></i>
@@ -1101,9 +1252,13 @@
                           </div>
                         </div>
                         <div class="productBody">
-                          <div class="d-flex justify-content-between align-items-start">
+                          <div
+                            class="d-flex justify-content-between align-items-start"
+                          >
                             <div>
-                              <h6 class="productTitle heading6">Basic Crew Neck Tee</h6>
+                              <h6 class="productTitle heading6">
+                                Basic Crew Neck Tee
+                              </h6>
                               <p class="productCategory">Black</p>
                               <p class="productPrice">$44.00</p>
                             </div>
@@ -1118,11 +1273,15 @@
               <!-- Pagination -->
               <nav aria-label="Product pagination" class="mt-5">
                 <ul class="pagination justify-content-center">
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">...</a>
+                  </li>
                   <li class="page-item"><a class="page-link" href="#">6</a></li>
                 </ul>
               </nav>

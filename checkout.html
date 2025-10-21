@@ -472,9 +472,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav customNavMenu">
             <li class="nav-item customNavMenu__list">
-              <a
-                class="nav-link customNavMenu__list__item "
-                href="./index.html"
+              <a class="nav-link customNavMenu__list__item" href="./index.html"
                 >Home</a
               >
             </li>
@@ -500,7 +498,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link customNavMenu__list__item custom--active" href="./checkout.html">Journal</a>
+              <a
+                class="nav-link customNavMenu__list__item"
+                href="./product.html"
+                >Product</a
+              >
             </li>
           </ul>
         </div>
@@ -533,9 +535,19 @@
           </div>
 
           <div class="col-lg-1 offset-1">
-            <div class="searchRightPart d-flex gap-4">
-              <i class="fa-solid fa-user" style="color: #000000"></i>
-              <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+            <div class="searchRightPart d-flex gap-2">
+              <a href="./signUp.html"
+                ><span
+                  ><i class="fa-solid fa-user" style="color: #000000"></i></span
+              ></a>
+
+              <a href="./checkout.html"
+                ><span
+                  ><i
+                    class="fa-solid fa-cart-shopping"
+                    style="color: #000000"
+                  ></i></span
+              ></a>
             </div>
           </div>
         </div>
@@ -552,7 +564,7 @@
               <h3 class="checkoutHeading__title heading1 text-capitalize mb-3">
                 Checkout
               </h3>
-              <h6 class="checkoutHeading__subTitle">Home  >  Checkout</h6>
+              <h6 class="checkoutHeading__subTitle">Home > Checkout</h6>
             </div>
           </div>
 
@@ -567,77 +579,117 @@
           </div>
 
           <div class="checkoutForm d-flex flex-column">
-            <div class="d-flex pb-3 ">
+            <div class="d-flex pb-3">
               <div>
                 <h4 class="heading6">First Name</h4>
-                <input type="text" placeholder="First Name" class="checkoutForm__box" />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="checkoutForm__box"
+                />
               </div>
               <div class="offset-4">
                 <h4 class="heading6">First Name</h4>
-                <input type="text" placeholder="First Name" class="checkoutForm__box ps-1" />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="checkoutForm__box ps-1"
+                />
               </div>
             </div>
 
             <h4 class="pb-2 heading6">Companye Name (Optional)</h4>
-            <input type="text" placeholder="Companye Name "  class="mb-3 checkoutForm__item"/>
+            <input
+              type="text"
+              placeholder="Companye Name "
+              class="mb-3 checkoutForm__item"
+            />
 
             <h4 class="pb-2 heading6">Country *</h4>
-            <input type="text" placeholder=" Please  Select" class="mb-3 checkoutForm__item" />
+            <input
+              type="text"
+              placeholder=" Please  Select"
+              class="mb-3 checkoutForm__item"
+            />
 
             <h4 class="pb-2 heading6">Street Address *</h4>
-            <input type="text" placeholder="House number and street name"  class="mb-3 checkoutForm__item"/>
+            <input
+              type="text"
+              placeholder="House number and street name"
+              class="mb-3 checkoutForm__item"
+            />
 
             <input
               type="text"
-              placeholder="Apartmen t, suite, unit etc. (optional)" 
+              placeholder="Apartmen t, suite, unit etc. (optional)"
               class="mb-2 checkoutForm__item"
             />
 
-            <h4 class="pb-2  heading6">Town/City *</h4>
-            <input type="text" placeholder="Town/City " class="mb-3 checkoutForm__item" />
+            <h4 class="pb-2 heading6">Town/City *</h4>
+            <input
+              type="text"
+              placeholder="Town/City "
+              class="mb-3 checkoutForm__item"
+            />
 
             <h4 class="pb-2 heading6">Post Code *</h4>
-            <input type="text" placeholder="Post Code " class="mb-3 checkoutForm__item" />
+            <input
+              type="text"
+              placeholder="Post Code "
+              class="mb-3 checkoutForm__item"
+            />
 
             <h4 class="pb-2 heading6">Phone *</h4>
-            <input type="number" placeholder="Phone "   class="mb-3 checkoutForm__item"/>
+            <input
+              type="number"
+              placeholder="Phone "
+              class="mb-3 checkoutForm__item"
+            />
 
             <h4 class="pb-2 heading6">Email Address *</h4>
-            <input type="email" placeholder="Email " class="mb-3 checkoutForm__item"  />
+            <input
+              type="email"
+              placeholder="Email "
+              class="mb-3 checkoutForm__item"
+            />
           </div>
 
           <div class="checkoutInfo">
             <h2 class="checkoutInfo__title heading2">Additional Information</h2>
-            <h5 class="checkoutInfo__subtitle heading6">Other Notes (Optional)</h5>
-            <p class="checkoutInfo__summary ">Notes about your order, e.g. special notes for delivery.</p>
-
+            <h5 class="checkoutInfo__subtitle heading6">
+              Other Notes (Optional)
+            </h5>
+            <p class="checkoutInfo__summary">
+              Notes about your order, e.g. special notes for delivery.
+            </p>
           </div>
           <div class="checkoutOrder">
-            <div class=" checkoutOrder__heading">
+            <div class="checkoutOrder__heading">
               <h2>Your Order</h2>
             </div>
-            <div class="d-flex align-items-center ">
+            <div class="d-flex align-items-center">
               <h4 class="checkoutOrder__items heading6">Product</h4>
-              <h6 class="checkoutOrder__items checkoutOrder__text ">Total</h6>
+              <h6 class="checkoutOrder__items checkoutOrder__text">Total</h6>
             </div>
-            <div class="d-flex align-items-center  ">
+            <div class="d-flex align-items-center">
               <h4 class="checkoutOrder__items heading6">Product name x 1</h4>
               <h6 class="checkoutOrder__items checkoutOrder__text">389.99 $</h6>
             </div>
-            <div class="d-flex align-items-center ">
+            <div class="d-flex align-items-center">
               <h4 class="checkoutOrder__items heading6">Subtotal</h4>
-              <h6 class="checkoutOrder__items checkoutOrder__text text-dark">389.99 $</h6>
+              <h6 class="checkoutOrder__items checkoutOrder__text text-dark">
+                389.99 $
+              </h6>
             </div>
-            <div class="d-flex align-items-center ">
+            <div class="d-flex align-items-center">
               <h4 class="checkoutOrder__items heading6">Total</h4>
-              <h6 class="checkoutOrder__items checkoutOrder__text  text-dark">389.99 $</h6>
+              <h6 class="checkoutOrder__items checkoutOrder__text text-dark">
+                389.99 $
+              </h6>
             </div>
           </div>
         </div>
       </div>
-
-
-      
     </section>
 
     <!-- ======================= Main part ==================== -->
@@ -730,7 +782,6 @@
             </p>
           </div>
         </div>
-
       </div>
     </footer>
     <!-- ======================= footer part ==================== -->
