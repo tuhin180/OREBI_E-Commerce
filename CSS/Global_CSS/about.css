@@ -1,0 +1,60 @@
+/* ======================= about part style ======================= */
+#aboutPart {
+    padding: 120px 0;
+}
+
+.aboutHeading__subTitle {
+    padding-bottom: 110px;
+}
+
+.aboutPera__heading {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.aboutPera__title {
+    color: var(--SonicSilver);
+    font-weight: 400;
+}
+
+.aboutPera__subtitle {
+    font-weight: 400;
+    color: var(--BlackColor);
+}
+
+.aboutImg {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+}
+
+.about__img {
+    position: relative;
+}
+
+.aboutOverlay__btn {
+    position: absolute;
+    bottom: 8%;
+    left: 37%;
+    background-color: var(--BlackColor);
+    color: var(--WhiteSmoke);
+    padding: 9px 38px;
+    border: none;
+    font-family: var(--DM-Sans);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.aboutDetails {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--DM-Sans);
+    width: 100%;
+    padding-top: 120px;
+}
+
+
+
+
+/* ======================= about part style ======================= */
