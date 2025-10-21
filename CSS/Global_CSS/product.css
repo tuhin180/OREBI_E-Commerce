@@ -1,0 +1,125 @@
+.color-options {
+    height: 10px;
+    width: 10px;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #f67a7a;
+}
+
+.circle__red {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #c30d0d;
+
+}
+
+.color-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.product-price {
+    row-gap: 22px;
+}
+
+.color-gray {
+    background-color: #a6a6a6;
+}
+
+.color-red {
+    background-color: #f67a7a;
+}
+
+.color-light-green {
+    background-color: #d7f4d1;
+}
+
+.color-light-gray {
+    background-color: #f0f0f0;
+}
+
+.color-aqua {
+    background-color: #cdf0f0;
+}
+
+.size-select {
+    width: 80px;
+    height: 34px;
+    font-size: 14px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.form-label {
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.rating__color {
+
+    color: goldenrod;
+}
+
+.description {
+    bottom: 50%;
+}
+
+.accordion-button::after {
+    background-image: none !important;
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #262626;
+    transform: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "+";
+}
+
+.review {
+    width: 400px;
+    height: 30px;
+    top: 71px;
+    left: 2px;
+    color: #767676;
+    gap: 62px;
+    align-items: center;
+}
+
+.button {
+    padding: 20px 24px;
+    background-color: #262626;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #262626;
+
+}
+
+.bannerLeft__summary {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 27px;
+    padding-right: 50px;
+}
+
+.customarRating {
+    display: flex;
+    justify-content: space-between;
+}
